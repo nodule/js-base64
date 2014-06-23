@@ -1,0 +1,28 @@
+{
+  "name": "nodule-js-base64",
+  "description": "JS Base64",
+  "author": "Rob Halff <rob.halff@gmail.com>",
+  "version": "0.0.3",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nodule/js-base64.git"
+  },
+  "engines": {
+    "node": ">=0.6.0"
+  },
+  "dependencies": {
+    "js-base64": "^2.1.5"
+  },
+  "devDependencies": {
+    "chit": "0.x.x"
+  },
+  "main": "x",
+  "chix": {
+    "name": "js-base64"
+  },
+  "scripts": {
+    "test": "chit",
+    "color": "rgb(100,35,136)"
+  }
+}

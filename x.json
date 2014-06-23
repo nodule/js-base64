@@ -1,0 +1,73 @@
+{
+  "name": "js-base64",
+  "description": "JS Base64",
+  "version": "0.0.3",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nodule/js-base64.git"
+  },
+  "dependencies": {
+    "js-base64": "^2.1.5"
+  },
+  "nodes": [
+    {
+      "ports": {
+        "input": {
+          "in": {
+            "type": "string",
+            "title": "String",
+            "description": "The string to be decoded.",
+            "async": true
+          }
+        },
+        "output": {
+          "out": {
+            "title": "Output",
+            "type": "string"
+          }
+        }
+      },
+      "require": {
+        "js-base64": "2.x.x"
+      },
+      "phrases": {
+        "active": "Decoding base64"
+      },
+      "async": true,
+      "description": "Base64 decode",
+      "ns": "js-base64",
+      "name": "decode",
+      "fn": "on.input.in = function() {\n  output({ out: js_base64.decode(data) });\n};\n"
+    },
+    {
+      "ports": {
+        "input": {
+          "in": {
+            "type": "string",
+            "title": "String",
+            "description": "The string to be encoded.",
+            "async": true
+          }
+        },
+        "output": {
+          "out": {
+            "title": "Output",
+            "type": "string"
+          }
+        }
+      },
+      "require": {
+        "js-base64": "2.x.x"
+      },
+      "phrases": {
+        "active": "Encoding to base64"
+      },
+      "async": true,
+      "description": "Base64 encode",
+      "ns": "js-base64",
+      "name": "encode",
+      "fn": "on.input.in = function() {\n  output({ out: js_base64.encode(data) });\n};\n"
+    }
+  ],
+  "twigs": []
+}

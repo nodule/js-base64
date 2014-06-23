@@ -1,0 +1,28 @@
+{
+  "name":"encode",
+  "ns": "js-base64",
+  "description":"Base64 encode",
+  "async": true,
+  "phrases": {
+    "active": "Encoding to base64"
+  },
+  "require":{
+    "js-base64":"2.x.x"
+  },
+  "ports":{
+    "input":{
+      "in":{
+        "type":"string",
+        "title":"String",
+        "description":"The string to be encoded.",
+        "async": true
+      }
+    },
+    "output":{
+      "out":{
+        "title": "Output",
+        "type":"string"
+      }
+    }
+  }
+}

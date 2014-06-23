@@ -1,0 +1,6 @@
+*.swp
+TODO
+node_modules
+test.*
+ATTIC
+*.txt
