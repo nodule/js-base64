@@ -11,6 +11,11 @@
   },
   "nodes": [
     {
+      "dependencies": {
+        "npm": {
+          "js-base64": "2.x.x"
+        }
+      },
       "ports": {
         "input": {
           "in": {
@@ -27,9 +32,6 @@
           }
         }
       },
-      "require": {
-        "js-base64": "2.x.x"
-      },
       "phrases": {
         "active": "Decoding base64"
       },
@@ -40,6 +42,11 @@
       "fn": "on.input.in = function() {\n  output({ out: js_base64.decode(data) });\n};\n"
     },
     {
+      "dependencies": {
+        "npm": {
+          "js-base64": "2.x.x"
+        }
+      },
       "ports": {
         "input": {
           "in": {
@@ -55,9 +62,6 @@
             "type": "string"
           }
         }
-      },
-      "require": {
-        "js-base64": "2.x.x"
       },
       "phrases": {
         "active": "Encoding to base64"
