@@ -1,5 +1,5 @@
 {
-  "name": "nodule-js-base64",
+  "name": "chix-js-base64",
   "description": "JS Base64",
   "author": "Rob Halff <rob.halff@gmail.com>",
   "version": "0.0.3",
@@ -17,7 +17,6 @@
   "devDependencies": {
     "chit": "0.x.x"
   },
-  "main": "x",
   "chix": {
     "name": "js-base64"
   },
