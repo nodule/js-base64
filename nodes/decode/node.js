@@ -1,3 +1,3 @@
 on.input.in = function() {
-  output({ out: js_base64.decode(input.in) });
+  output({ out: js_base64.decode($.in) });
 };
