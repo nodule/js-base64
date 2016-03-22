@@ -16,7 +16,7 @@ module.exports = {
         fn: function __IN__(data, x, source, state, input, output, js_base64) {
           var r = function() {
             output({
-              out: js_base64.encode(data)
+              out: $.write('in', js_base64.encode($.in))
             });
           }.call(this);
           return {

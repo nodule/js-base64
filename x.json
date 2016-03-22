@@ -39,7 +39,7 @@
       "description": "Base64 decode",
       "ns": "js-base64",
       "name": "decode",
-      "fn": "on.input.in = function() {\n  output({ out: js_base64.decode(data) });\n};\n"
+      "fn": "on.input.in = function() {\n  output({ out: $.write('in', js_base64.decode($.in)) });\n};\n"
     },
     {
       "dependencies": {
@@ -70,7 +70,7 @@
       "description": "Base64 encode",
       "ns": "js-base64",
       "name": "encode",
-      "fn": "on.input.in = function() {\n  output({ out: js_base64.encode(data) });\n};\n"
+      "fn": "on.input.in = function() {\n  output({ out: $.write('in', js_base64.encode($.in)) });\n};\n"
     }
   ],
   "twigs": []
