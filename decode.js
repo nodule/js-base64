@@ -13,7 +13,7 @@ module.exports = {
         title: "String",
         description: "The string to be decoded.",
         async: true,
-        fn: function __IN__(data, x, source, state, input, output, js_base64) {
+        fn: function __IN__(data, source, state, input, $, output, js_base64) {
           var r = function() {
             output({
               out: $.write('in', js_base64.decode($.in))
